@@ -8,11 +8,8 @@ from utils.processing import get_transition_from_gpt
 from utils.layout import rebuild_article_with_transitions
 from utils.display import layout_title_and_input, show_output, show_version
 from utils.version import compute_version_hash
-from dotenv import load_dotenv
 from utils.title_blurb import generate_title_and_blurb
 
-# Load environment variables from .env file
-load_dotenv()
 
 def main():
     # First check if running on Streamlit Cloud (use st.secrets)
@@ -20,9 +17,7 @@ def main():
         api_url = st.secrets["API_URL"]
         api_token = st.secrets["API_TOKEN"]
     else:
-        # Fallback to environment variables for local development
-        api_url = os.getenv("API_URL")
-        api_token = os.getenv("API_TOKEN")
+        
     
     # Create headers with authentication
     headers = {
