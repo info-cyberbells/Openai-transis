@@ -62,7 +62,7 @@ def generate_title_and_blurb(paragraph, client, headers=None):
             client,
             json=payload,
             headers=headers,
-            timeout=15  # Increased timeout
+            timeout=35  # Increased timeout
         )
         
         # Debug the response
