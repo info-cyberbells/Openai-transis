@@ -2,7 +2,6 @@ import streamlit as st
 import requests  # Changed from OpenAI import
 import random
 import os
-from dotenv import load_dotenv
 from utils.io import load_examples
 from utils.processing import get_transition_from_gpt
 from utils.layout import rebuild_article_with_transitions
