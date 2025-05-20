@@ -95,7 +95,7 @@ def get_transition_from_gpt(para_a, para_b, examples, client, headers=None, mode
                 client,
                 json=payload,
                 headers=headers,
-                timeout=15  # Increased timeout
+                timeout=35  # Increased timeout
             )
             
             # Debug the response for the first transition and first attempt only
