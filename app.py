@@ -17,6 +17,8 @@ def main():
         api_url = st.secrets["API_URL"]
         api_token = st.secrets["API_TOKEN"]
     else:
+        api_url = st.secrets["API_URL"]
+        api_token = st.secrets["API_TOKEN"]
         
     
     # Create headers with authentication
